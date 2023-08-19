@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { apiURL } from "./ApiConfig";
 
 export default function CreateTeacher({
   firstName,
@@ -10,7 +11,7 @@ export default function CreateTeacher({
   gender,
 }) {
   return new Promise((resolve, reject) => {
-    fetch("http://localhost:8080/api/teachers", {
+    fetch(apiURL+"/teachers", {
       method: "POST",
       mode: "cors",
       headers: {

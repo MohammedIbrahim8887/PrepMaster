@@ -1,6 +1,8 @@
+import { apiURL } from "./ApiConfig";
+
 export default function AuthUser({ email, password, usertype }) {
   return new Promise((resolve, reject) => {
-    fetch(`http://localhost:8080/api/${usertype}`, {
+    fetch(apiURL+usertype, {
       method: "GET",
       mode: "cors",
       headers: {

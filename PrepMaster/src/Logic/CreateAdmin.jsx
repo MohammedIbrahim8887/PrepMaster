@@ -1,7 +1,9 @@
+import { apiURL } from "./ApiConfig";
+
 export default function CreateAdmin({ email, organization, password }) {
   return new Promise((resolve, reject) => {
     console.log(email, organization, password);
-    fetch("http://localhost:8080/api/admins", {
+    fetch(apiURL+"/admins", {
       method: "POST",
       mode: "cors",
       headers: {

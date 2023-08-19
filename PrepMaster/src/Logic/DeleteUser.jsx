@@ -1,6 +1,8 @@
+import { apiURL } from "./ApiConfig";
+
 export function DeleteUser({ id, type }) {
   return new Promise((resolve, reject) => {
-    fetch(`http://localhost:8080/api/${type}/${id}`, {
+    fetch(apiURL+`/${type}/${id}`, {
       method: "DELETE",
       mode: "cors",
       headers: {

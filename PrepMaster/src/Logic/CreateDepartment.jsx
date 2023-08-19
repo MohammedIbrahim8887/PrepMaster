@@ -1,10 +1,12 @@
+import { apiURL } from "./ApiConfig";
+
 export default function CreateDepartment({
   name,
   departmentHeadId,
   description,
 }) {
   return new Promise((resolve, reject) => {
-    fetch("http://localhost:8080/api/departments", {
+    fetch(apiURL+"/departments", {
       method: "POST",
       mode: "cors",
       headers: {

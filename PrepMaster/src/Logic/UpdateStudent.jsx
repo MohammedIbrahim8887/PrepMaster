@@ -1,3 +1,5 @@
+import { apiURL } from "./ApiConfig";
+
 export default function UpdateStudent({
   id,
   firstName,
@@ -9,7 +11,7 @@ export default function UpdateStudent({
   departmentId,
 }) {
   return new Promise((resolve, reject) => {
-    fetch("http://localhost:8080/api/students", {
+    fetch(apiURL+"/students", {
       method: "PUT",
       mode: "cors",
       headers: {

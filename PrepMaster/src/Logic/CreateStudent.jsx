@@ -1,3 +1,5 @@
+import { apiURL } from "./ApiConfig";
+
 export default function CreateStudent({
   firstName,
   lastName,
@@ -8,7 +10,7 @@ export default function CreateStudent({
   departmentId,
 }) {
   return new Promise((resolve, reject) => {
-    fetch("http://localhost:8080/api/students", {
+    fetch(apiURL+"/students", {
       method: "POST",
       mode: "cors",
       headers: {
