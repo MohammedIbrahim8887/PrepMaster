@@ -26,7 +26,7 @@ export default function SigninStudent() {
  //         console.error(error);
           // Handle error case
 //        });
-//    },
+   },
   });
   const inputs = [
     {
