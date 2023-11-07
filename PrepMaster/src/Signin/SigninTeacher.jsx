@@ -29,7 +29,7 @@ export default function SigninTeacher() {
 //        .catch((err) => {
 //          console.error(err);
 //        });
-//    },
+   },
   });
 
   const inputs = [
