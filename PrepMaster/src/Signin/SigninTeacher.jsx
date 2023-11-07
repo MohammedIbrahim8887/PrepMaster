@@ -16,20 +16,20 @@ export default function SigninTeacher() {
       usertype: "teachers",
     },
     onSubmit: (values) => {
-      AuthUser(values)
-        .then((valid) => {
-          if (valid) {
-            console.log("Setting email in context:", values.email);
-            setEmail(values.email); // Set the email value in TeacherContext
+//      AuthUser(values)
+//        .then((valid) => {
+  //        if (valid) {
+    //        console.log("Setting email in context:", values.email);
+ //           setEmail(values.email); // Set the email value in TeacherContext
             navigate("/TeacherDashboard");
-          } else {
-            alert("Incorrect Password or Email");
-          }
-        })
-        .catch((err) => {
-          console.error(err);
-        });
-    },
+  //        } else {
+//            alert("Incorrect Password or Email");
+//          }
+//        })
+//        .catch((err) => {
+//          console.error(err);
+//        });
+//    },
   });
 
   const inputs = [
