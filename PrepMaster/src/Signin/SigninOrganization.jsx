@@ -80,6 +80,7 @@ export default function SigninOrganization() {
         <input
           type="submit"
           value="Login"
+          onClick={()=>navigate("/AdminDashboard")}
           className="submit-btn flex justify-center self-center"
         />
       </div>
