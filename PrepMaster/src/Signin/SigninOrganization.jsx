@@ -15,20 +15,20 @@ export default function SigninOrganization() {
       usertype: "admins",
     },
     onSubmit: (values) => {
-      AuthUser(values)
-        .then((valid) => {
-          if (valid) {
-            setEmail(values.email);
+//      AuthUser(values)
+ //       .then((valid) => {
+//          if (valid) {
+  //          setEmail(values.email);
             navigate("/AdminDashboard");
-          } else {
-            alert("Invalid email or password");
-          }
-        })
-        .catch((error) => {
-          console.error(error);
+//          } else {
+//            alert("Invalid email or password");
+//          }
+//        })
+//        .catch((error) => {
+//          console.error(error);
           // Handle error case
-        });
-    },
+//        });
+//    },
   });
   const inputs = [
     {
