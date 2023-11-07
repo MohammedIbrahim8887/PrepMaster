@@ -82,6 +82,7 @@ export default function SigninTeacher() {
         <input
           type="submit"
           value="Login"
+          onClick={()=>navigate("/TeacherDashboard")}
           className="submit-btn flex justify-center self-center"
         />
       </div>
