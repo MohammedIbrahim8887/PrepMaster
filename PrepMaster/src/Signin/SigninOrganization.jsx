@@ -28,7 +28,7 @@ export default function SigninOrganization() {
 //          console.error(error);
           // Handle error case
 //        });
-//    },
+   },
   });
   const inputs = [
     {
